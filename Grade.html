@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title> step-juice.blogspot.com โปรเเกรมคำนวนเกรด </title>
+<meta http-equiv="Content-Iype" content="text/html; charse=utf-8" />
+<script language="Javascript">
+ funcction calculateGrade()
+ {
+  var g = document.getElementById("g").value;
+  var objDiv = document.getElementById("showGrade");
+  if(g >= 80)
+   objDiv.innerHTML = "ได้เกรด A";
+  else if (g >= 70)
+   objDiv.innerHTML = "ได้เกรด B";
+  else if (g >=60)
+   objDiv.innerHTML = "ได้เกรด C";
+  else if (g >=50)
+   objDiv.innerHTML = "ได้เกรด F";
+ }
+</script>
+ </head>
+ <body>
+ เกรด<input type="text" name="g" id="g"><input type="button" value="คำนวนเกรด"onclick="calculateGrade()">
+  <div id="showGrade"></div>
+ </body>
+</html>
+   
+  
+
+
